@@ -1,0 +1,4 @@
+## Title: HeroReputation
+## Interface: 80300
+## Notes: Switch reputations upon reputation gain & zone change
+HeroReputation.lua
