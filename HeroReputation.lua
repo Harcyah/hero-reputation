@@ -4,8 +4,23 @@ frame:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 frame:RegisterEvent("PLAYER_ENTERING_WORLD");
 
 local zoneReputationMap = {
+	-- BFA
 	["Rade de Tiragarde"] = "Amirauté des Portvaillant",
 	["Vallée Chantorage"] = "Sillage des tempêtes",
+	["Drustvar"] = "Ordre des braises",
+	["Vol’dun"] = "7e Légion",
+	["Nazmir"] = "7e Légion",
+	["Zuldazar"] = "7e Légion",
+	["Uldum"] = "Accord d’Uldum",
+
+	-- Legion
+	["Tornheim"] = "Valarjar",
+	["Haut-Roc"] = "Tribu de Haut-Roc",
+	["Val’sharah"] = "Tisse-Rêves",
+	["Suramar"] = "Souffrenuit",
+	["Azsuna"] = "Cour de Farondis",
+
+	-- Cataclysm
 	["Hautes-terres du Crépuscule"] = "Clan Marteau-Hardi",
 }
 
