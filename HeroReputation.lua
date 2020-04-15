@@ -34,12 +34,10 @@ local function onZoneChange()
 		local name = GetFactionInfo(factionIndex)
 		if name == factionName then
 			SetWatchedFactionIndex(factionIndex)
-			DEFAULT_CHAT_FRAME:AddMessage('Entering zone [' .. zoneText .. '], switching reputation to [' .. factionName .. ']', 0.0, 0.8, 0.0);
 			return
 		end
 	end
 
-	DEFAULT_CHAT_FRAME:AddMessage('Entering zone [' .. zoneText .. '], unknown reputation !', 0.0, 0.8, 0.0);
 	SetWatchedFactionIndex(0)
 end
 
