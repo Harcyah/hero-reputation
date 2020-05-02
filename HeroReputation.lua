@@ -14,7 +14,7 @@ local zoneReputationMap = {
 
 	-- BFA assaults
 	["Uldum"] = "Accord d’Uldum",
-	["Val de l'Éternel printemps"] = "Rajani",
+	["Val de l’Éternel printemps"] = "Rajani",
 
 	-- Legion
 	["Tornheim"] = "Valarjar",
