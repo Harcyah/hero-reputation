@@ -7,11 +7,14 @@ local zoneReputationMap = {
 	-- BFA
 	["Rade de Tiragarde"] = "Amirauté des Portvaillant",
 	["Vallée Chantorage"] = "Sillage des tempêtes",
-	["Drustvar"] = "Ordre des braises",
+	["Drustvar"] = "Ordre des Braises",
 	["Vol’dun"] = "7e Légion",
 	["Nazmir"] = "7e Légion",
 	["Zuldazar"] = "7e Légion",
+
+	-- BFA assaults
 	["Uldum"] = "Accord d’Uldum",
+	["Val de l'Éternel printemps"] = "Rajani",
 
 	-- Legion
 	["Tornheim"] = "Valarjar",
