@@ -11,6 +11,8 @@ local zoneReputationMap = {
 	["Vol’dun"] = "7e Légion",
 	["Nazmir"] = "7e Légion",
 	["Zuldazar"] = "7e Légion",
+	["Nazjatar"] = "Ankoïens du Brisant",
+	["Île de Mécagone"] = "Résistance de Mécarouille",
 
 	-- BFA assaults
 	["Uldum"] = "Accord d’Uldum",
