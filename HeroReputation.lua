@@ -30,12 +30,15 @@ local zoneReputationMap = {
 }
 
 local function onZoneChange()
+	if (UnitLevel("player") < 120) then
+		return
+	end
+
 	local zoneText = GetZoneText()
 	local factionName = zoneReputationMap[zoneText]
 
-	local found = false
 	local numFactions = GetNumFactions()
-	for factionIndex = 1, GetNumFactions() do
+	for factionIndex = 1, numFactions do
 		local name = GetFactionInfo(factionIndex)
 		if name == factionName then
 			SetWatchedFactionIndex(factionIndex)
