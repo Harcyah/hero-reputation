@@ -30,7 +30,7 @@ local zoneReputationMap = {
 }
 
 local function onZoneChange()
-	if (UnitLevel("player") < 120) then
+	if (UnitLevel("player") < 50) then
 		return
 	end
 
