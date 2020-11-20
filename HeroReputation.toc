@@ -1,5 +1,5 @@
 ## Title: HeroReputation
-## Interface: 90001
+## Interface: 90002
 ## Author: harcyah@gmail.com
 ## Notes: Switch reputations upon zone change
 HeroReputation.lua
