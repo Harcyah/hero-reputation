@@ -3,7 +3,16 @@ local frame = CreateFrame('Frame');
 frame:RegisterEvent('ZONE_CHANGED_NEW_AREA');
 frame:RegisterEvent('PLAYER_ENTERING_WORLD');
 
-local zoneReputationMap = {
+local ZONE_REPUTATION_MAP = {
+
+	-- Shadowlands
+	['Revendreth'] = 'Cour des Moissonneurs',
+	['Sylvarden'] = 'L’Hallali',
+	['Le Bastion'] = 'Transcendés',
+	['Maldraxxus'] = 'Armée immortelle',
+	['L’Antre'] = 'Ve’nari',
+	['Korthia'] = 'Avancée de la mort',
+
 	-- BFA
 	['Rade de Tiragarde'] = 'Amirauté des Portvaillant',
 	['Vallée Chantorage'] = 'Sillage des tempêtes',
@@ -35,7 +44,7 @@ local function onZoneChange()
 	end
 
 	local zoneText = GetZoneText()
-	local factionName = zoneReputationMap[zoneText]
+	local factionName = ZONE_REPUTATION_MAP[zoneText]
 
 	local numFactions = GetNumFactions()
 	for factionIndex = 1, numFactions do
@@ -50,14 +59,13 @@ local function onZoneChange()
 end
 
 frame:SetScript('OnEvent', function(self, event, ...)
-	local arg = {...}
 
 	if (event == 'ZONE_CHANGED_NEW_AREA') then
-		onZoneChange()
+		onZoneChange();
 	end
 
 	if (event == 'PLAYER_ENTERING_WORLD') then
-		onZoneChange()
+		onZoneChange();
 	end
 
 end)
