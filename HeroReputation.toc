@@ -1,5 +1,5 @@
 ## Title: HeroReputation
-## Interface: 90100
+## Interface: 90105
 ## Author: harcyah@gmail.com
 ## Notes: Switch reputations upon zone change
 HeroReputation.lua
